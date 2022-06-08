@@ -102,3 +102,9 @@ i {
 .fa-clipboard-check {
   font-size: 20px;
 }
+
+footer .row {
+  margin-top: 50px;
+  height: 40px;
+  font-size: larger;
+}
