@@ -19,6 +19,7 @@ textarea{
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  background-image: linear-gradient(rgb(139, 224, 224), rgb(111, 241, 111));
 }
 
 .description{
@@ -31,42 +32,73 @@ textarea{
 }
 
 .row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
-  background-color: #06AED5;
+  height: 100px;
+  text-align: center;
+}
+
+.events, .time{
+  border-bottom: rgb(7, 7, 7) 2px solid;
+  border-right: black 2px dotted;
+  background-image: linear-gradient(to right, rgb(193, 118, 212), rgb(117, 117, 211));
 }
 
 .timeDay {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  background-image: linear-gradient(to right, rgb(193, 118, 212), rgb(117, 117, 211));
+}
+
+.schedule {
+  vertical-align: top;
+  white-space: normal;
+  text-align: left;
+  border-top: #000000 1px dashed;
+  border-left: #000000 1px solid;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  color: rgb(63, 63, 144);
 }
 
 .past {
-  background-color: #d3d3d3;
-  color: white;
+  background-color: #e1dcdc;
+  color: rgb(115, 113, 113);
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #fbc66b;
   color: white;
+  border: #000000 1px dashed;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: rgb(130, 217, 130);
   color: white;
 }
 
-.saveBtn {
-  border-left: 1px solid black;
+.btn {
+  border: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
-  color: white;
+  color: rgb(38, 38, 118);
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
+.btn:hover {
+  font-size: 25px;
   transition: all .3s ease-in-out;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(4, 7, 0, 0.521);
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+
+.fa-clipboard-check {
+  font-size: 20px;
 }
