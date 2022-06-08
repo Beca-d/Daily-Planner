@@ -34,30 +34,13 @@ textarea{
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
-  text-align: center;
-}
-
-.time {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
   background-color: #06AED5;
 }
 
-.events {
-  background-color: #77dd77;
-
-}
-
-.timeDay {
+.hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
-}
-
-.schedule {
-  text-align: left;
-  border: #000000 1px outset;
 }
 
 .past {
