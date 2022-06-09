@@ -13,22 +13,20 @@ Array.from(timeSlot).forEach(schedule => {
     if (scheduleHour) {
         if (hour == scheduleHour) {
            $(schedule).addClass("present");
-        } else if (hour < scheduleHour){
+        } else if (hour < scheduleHour) {
             $(schedule).addClass("future")
         } else {
             $(schedule).addClass("past")
         }
     }
-})
+});
 
-function setCurrent(element, current) {
-    element.style.classList.add = current;
-}
-
-function setFuture() {
-    $('.schedule').addClass("future");
-}
-
-function setPast() {
-    $('.col-10').addClass("past");
-}
+  function save_data(e){
+    var number = $(e).data('num');
+    var input = document.getElementById('textArea' + number).value;
+    localStorage.setItem('text' + number, input);
+  };
+  
+  for(var i = 6; i <= 19; i++){
+    document.getElementById('textArea' + i).value = localStorage.getItem('text' + i);
+  };
