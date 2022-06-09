@@ -1,6 +1,7 @@
 # Daily Scheduler for Work
 
 ## Purpose
+An web based scheduler to assist with organizing daily business and personal activities.
 
 ## Built With 
 * HTML
