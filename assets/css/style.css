@@ -1,3 +1,4 @@
+/* Imported font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Tiro+Gurmukhi&display=swap');
 
 body {
@@ -14,7 +15,7 @@ body {
   border-bottom: 10px solid black;
   background-image: linear-gradient(rgb(139, 224, 224), rgb(111, 241, 111));
 }
-
+/* styling today's date at top of page  */
 #currentDay {
   font-size: 45px;
 }
@@ -33,6 +34,7 @@ body {
   text-align: center;
 }
 
+/* styling tob row of table */
 .events, .time{
   border-bottom: rgb(7, 7, 7) 2px solid;
   border-right: black 2px dotted;
@@ -64,25 +66,17 @@ body {
   font-size: 20px;
 }
 
-i {
-  color: rgb(63, 63, 144);
-}
-
+/* styling background colours for time slots based on time */
 .past {
   background-color: #e1dcdc;
-  color: rgb(115, 113, 113);
-  font-style: italic;
 }
 
 .present {
   background-color: #fbc66b;
-  color: rgb(245, 30, 30);
-  font-weight: bold;
 }
 
 .future {
   background-color: rgb(130, 217, 130);
-  color: black;
 }
 
 .btn {
@@ -103,8 +97,10 @@ i {
   transform: scale(1.03);
 }
 
+/* styling font awesome icon */
 .fa-clipboard-check {
   font-size: 20px;
+  color: rgb(63, 63, 144);
 }
 
 footer .row {

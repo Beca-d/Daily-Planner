@@ -13,13 +13,14 @@
     <title>Work Day Scheduler</title>
   </head>
   <body>
+    <!--Header/Jumbotron for scheduler-->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <!-- Planner Time Slots below 6am to 8pm -->
       <div class="row topColumn">
         <div class="col-2 time">Time</div>
         <div class="col-10 events">Events</div>
@@ -27,8 +28,10 @@
       <div class="row">
         <div class="col-2 timeDay">6am - 7am</div>
         <div class="col-8 col-sm-9 schedule" id="06">
+      <!--textareas allow form input from users-->
           <textarea class="form-control border-0 bg-transparent" id="textArea6" name="text6am" rows="4" placeholder="Click here to add your appointments"></textarea>
         </div>
+        <!--buttons have data numbers to match up with text areas-->
         <button onclick='save_data(this)' data-num="6" type="submit" class="col-2 col-sm-1 btn" id="btn6">Save <i class="fa-solid fa-clipboard-check"></i></button>
       </div>
       <div class="row">
@@ -123,6 +126,7 @@
         <button onclick='save_data(this)' data-num="19" type="submit" class="col-2 col-sm-1 btn" id="btn19">Save <i class="fa-solid fa-clipboard-check"></i></button> 
       </div>
     </div>
+    <!-- Simple footer with title and name of creator -->
     <footer>
       <div class="row">
         <div class="col-12">Daily Scheduler 2022
